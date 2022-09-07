@@ -1,0 +1,5 @@
+<ul *ngFor="let day of daysOfTheWeek">
+  <li (click)="selectedCity(day)" [ngClass]="{'selected':day===selectedDay}">{{day}}</li>
+</ul>
+
+<p>The days of the week you' ve selected is:  {{this.selectedDay}}</p>

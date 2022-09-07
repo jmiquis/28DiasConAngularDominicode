@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { TwoWayDataBinddingComponent } from './two-way-data-bindding/two-way-data-bindding.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { EventBiddingComponent } from './event-bidding/event-bidding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InterpolationComponent,
     TwoWayDataBinddingComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    EventBiddingComponent
   ],
   imports: [
     BrowserModule,

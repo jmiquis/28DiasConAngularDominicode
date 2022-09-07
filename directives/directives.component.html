@@ -1,0 +1,13 @@
+
+
+<ul>
+  <!-- this a way to conditionate the displaying -->
+  <li *ngFor="let city of cities" [ngClass]="{'selected':active}">{{city}}</li>
+</ul>
+
+<!-- this checkbox is bindded to the "active" property in the class -->
+<input type="checkbox" [(ngModel)]="active">
+
+<div *ngIf="active">
+  <p>only visible if the property "active" is true</p>
+</div>
